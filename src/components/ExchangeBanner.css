@@ -1,0 +1,74 @@
+.exchange-banner {
+  width: 85%;
+  max-width: 480px;
+  margin: 0 auto 0.5rem auto;
+  background-color: var(--card-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exchange-banner.expanded {
+  border: 2px solid var(--primary-color);
+}
+
+.banner-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.exchange-banner.expanded .banner-toggle {
+  border-radius: 8px 8px 0 0;
+}
+
+.arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.exchange-links {
+  padding: 0.5rem 0;
+}
+
+.exchange-links a {
+  display: block;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.exchange-links a:hover {
+  background-color: var(--hover-color);
+  color: #ffffff;
+}
+
+.exchange-links a:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+@media (min-width: 768px) {
+  .banner-toggle {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .exchange-links a {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}

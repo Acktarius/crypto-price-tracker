@@ -1,0 +1,37 @@
+[
+  {
+    "id": "conceal",
+    "symbol": "CCX",
+    "imageUrl": "https://assets.coingecko.com/coins/images/6382/standard/conceal.png"
+  },
+  {
+    "id": "bitcoin",
+    "symbol": "BTC",
+    "imageUrl": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png"
+  },
+  {
+    "id": "litecoin",
+    "symbol": "LTC",
+    "imageUrl": "https://assets.coingecko.com/coins/images/2/large/litecoin.png"
+  },
+  {
+    "id": "dogecoin",
+    "symbol": "DOGE",
+    "imageUrl": "https://assets.coingecko.com/coins/images/5/large/dogecoin.png"
+  },
+  {
+    "id": "handshake",
+    "symbol": "HNS",
+    "imageUrl": "https://assets.coingecko.com/coins/images/10562/standard/circle-handshakeLogo.png"
+  },
+  {
+    "id": "alephium",
+    "symbol": "ALPH",
+    "imageUrl": "https://assets.coingecko.com/coins/images/21598/standard/Alephium-Logo_200x200_listing.png"
+  },
+  {
+    "id": "polkadot",
+    "symbol": "DOT",
+    "imageUrl": "https://assets.coingecko.com/coins/images/12171/large/polkadot.png"
+  }
+]

@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--text-color);
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.fixed-bottom-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.App.light-mode {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --card-bg-color: #f0f0f0;
+  --primary-color: #4a0099;
+  --hover-color: #3700b3;
+}
+
+.App.dark-mode {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --card-bg-color: #2c2c2c;
+  --primary-color: #6200ee;
+  --hover-color: #3700b3;
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .theme-toggle {
+    font-size: 1.5rem;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+  }
+}
